@@ -4,10 +4,12 @@ import CardPage from "../CardPage";
 export default function HomePages() {
 
     const cardPage = document.querySelector('.cardPage');
+
     const toggle = document.querySelector('.toggle');
-    toggle.onclick = function (){
-        cardPage.classList.toggle('dark')
-    }
+
+    // toggle.onClick = function (){
+    //     cardPage.classList.toggle('dark')
+    // }
 
     return (
         <>
