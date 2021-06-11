@@ -1,0 +1,123 @@
+/* Created azamat_azadov 6/11/2021 */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;
+  user-select: none;
+}
+
+.cardPage {
+  width: 100%;
+  height: 100vh;
+  background: rgba(101, 101, 101, 0.98);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: background 0.5s;
+
+  .toggle {
+    position: absolute;
+    font-size: 2rem;
+    border-radius: 50%;
+    top: 15px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &:before {
+      content: '\f185';
+      font-family: FontAwesome;
+      color: rgba(247, 237, 105, 0.98);
+    }
+  }
+
+  .cardPage1 {
+    width: 100%;
+    height: 80vh;
+
+    .text {
+      margin-top: 2vh;
+      color: black;
+    }
+
+    .card1 {
+      margin-top: 10vh;
+      width: 20em;
+      height: 60vh;
+      border-radius: 20px;
+      background: rgba(153, 153, 153, 0.98);
+
+      img {
+        width: 11em;
+        height: 10em;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .social {
+        .icon {
+          width: 3rem;
+          height: 3rem;
+          margin-left: 5vh;
+          margin-top: 2vh;
+          border-radius: 50%;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          font-size: 20px;
+          text-decoration: none;
+
+          &:hover {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          }
+
+          a {
+            font-size: 20px;
+            text-decoration: none;
+            transition: 0.5s;
+
+            //&:hover {
+            //  color: white;
+            //}
+          }
+        }
+
+        .facebook {
+          a {
+            color: #2833bb;
+          }
+        }
+
+        .telegram {
+          a {
+            color: #2833bb;
+          }
+          margin-right: 4vh;
+        }
+
+        .intagram {
+          a {
+            color: #de1b1a;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cardPage.dark .card1 {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.cardPage.dark{
+  background: rgba(234,238,220,0.98);
+
+  .toggle {
+    &:before {
+      content: '\f186';
+      font-family: FontAwesome;
+      color: #2833bb;
+    }
+  }
+}
+
