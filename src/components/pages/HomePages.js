@@ -1,20 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import CardPage from "../CardPage";
 
 export default function HomePages() {
 
-    const cardPage = document.querySelector('.cardPage');
+    const [activeClass, setClass] = useState(' ');
 
-    const toggle = document.querySelector('.toggle');
+    const addClassList = () => {
+        setClass(!activeClass)
+        if (activeClass !== " ") {
+            setClass(" ")
+        } else {
+            setClass('light')
+        }
 
-    // toggle.onClick = function (){
-    //     cardPage.classList.toggle('dark')
-    // }
+    }
 
     return (
         <>
-            <div className='cardPage'>
-                <div className="float-end toggle d-flex justify-content-center align-items-center"/>
+            <div className={'cardPage ' + activeClass}>
+                <div className="float-end toggle d-flex justify-content-center align-items-center"
+                     onClick={addClassList}/>
                 <div className="cardPage1 d-flex justify-content-center align-content-center align-items-center">
                     <div className="">
                         <CardPage/>

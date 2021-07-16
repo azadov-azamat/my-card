@@ -3,11 +3,11 @@ import HomePages from "./components/pages/HomePages";
 import './components/style/index.scss';
 
 function App() {
-  return (
-   <>
-    <HomePages/>
-   </>
-  );
+    return (
+        <>
+            <HomePages/>
+        </>
+    );
 }
 
 export default App;
