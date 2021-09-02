@@ -8,7 +8,7 @@ export default function Video() {
     }
     return (
         <div className="cardPage d-flex justify-content-center align-items-center">
-            <video muted={true} autoPlay={true} loop={true} style={style}>
+            <video autoPlay={true} loop={true} style={style}>
                 <source src={video}/>
             </video>
         </div>
