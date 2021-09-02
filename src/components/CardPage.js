@@ -1,5 +1,7 @@
 import React from "react";
 import {Col, Container, Row} from "reactstrap";
+import {AiOutlinePlayCircle} from "react-icons/all";
+import {Link} from "react-router-dom";
 
 export default function CardPage() {
     return (
@@ -23,9 +25,12 @@ export default function CardPage() {
                                         </a>
                                     </div>
                                     <div className="icon intagram align-items-center d-flex justify-content-center">
-                                        <a href="https://www.instagram.com/azadov_azamat_life/">
-                                            <i className="fa fa-instagram"/>
-                                        </a>
+                                        <Link to='/video'>
+                                            <AiOutlinePlayCircle size={30}/>
+                                        </Link>
+                                        {/*<a href="https://www.instagram.com/azadov_azamat_life/">*/}
+                                        {/*    <i className="fa fa-instagram"/>*/}
+                                        {/*</a>*/}
                                     </div>
                                     <div className="icon telegram align-items-center d-flex justify-content-center">
                                         <a href="https://t.me/azadov_azamat">
@@ -36,7 +41,6 @@ export default function CardPage() {
                                 </div>
                             </div>
                         </div>
-
                     </Col>
                 </Row>
             </Container>

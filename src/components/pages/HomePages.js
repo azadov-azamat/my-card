@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 import CardPage from "../CardPage";
+import audio from "../audio/Fredji - Happy Life (Kygo Style) (320 kbps).mp3";
 
 export default function HomePages() {
 
     const [activeClass, setClass] = useState(' ');
 
     const addClassList = () => {
-        setClass(!activeClass)
         if (activeClass !== " ") {
             setClass(" ")
         } else {
