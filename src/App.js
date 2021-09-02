@@ -12,6 +12,9 @@ function App() {
                 <Route exact path="/" component={HomePages}/>
                 <Route exact path="/video" component={Video}/>
             </Switch>
+            <audio autoPlay={true} loop>
+                <source src={audio}/>
+            </audio>
         </Router>
     );
 }
