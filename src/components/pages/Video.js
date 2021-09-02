@@ -11,7 +11,7 @@ export default function Video(){
     return(
          <div className="cardPage d-flex justify-content-center align-items-center">
              {/*<Link to={'/'}>Back</Link>*/}
-             <video muted autoPlay={true} loop={true} style={{width: '100%', height: '100%'}}>
+             <video autoPlay={true} loop={true} style={{width: '100%', height: '100%'}}>
                  <source src={video}/>
              </video>
          </div>
